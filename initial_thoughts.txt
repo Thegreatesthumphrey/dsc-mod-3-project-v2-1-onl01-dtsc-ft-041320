@@ -1,0 +1,26 @@
+<body>
+    <h1>Personal Notes and Ideas</h1>
+
+            <ol>
+                <li>I wonder if having a voicemail plan would discourage people from switching companies... They can transfer their phone number, but they cannot transfer their voicemails. They might lose saved vm messages... the percentage might be low, but may be enough to discourage switching in some... thus ensuring a vm plan is sold to a customer is of a higher priority, if true.</li>
+
+                <li>The amount of customer service calls is always an obvious indicator, probably a 2 t-test because 0 calls can possible increase churn as well as too many</li>
+
+                <li>The fact that people can transfer their actual phone number makes switching easier and more unpredictable</li>
+
+                <li># of accounts greater than say 5... most likely means they are companies.  Those employees are more oblivious to charges paid by their companies versus themselves... Companies still take that into account in an overall bill. They are very likely to switch companies based on penny amounts... 19 cent a minutes versus 20 cent a minute still equates to substantial changes.</li> 
+
+                <li>People who have late night calls may tend to be a little more unpredictable, less responsible, and less stable</li>
+                
+                <li>There are only 3 area codes in the dataset. Im curious as to where they are located and the churn for people who do not live in those area codes vs. the ones that live in that area code </li>
+                
+                <li>Also with area codes, Im curious of the churn on people that have a phone number where the area code also matches the first 3 digits of their phone number. Thoughts are the easier the phone number to remember the less likely they will want to lose it.</li>
+            </ol>
+
+    <h2>Modeling</h2>
+
+    <p> <b style="font-size:16px">Guassian Bayes</b> - 1. May be a good indicator to use to identify customers that have factors that more closely resemble customers that have left, because at one time the customers that are now gone were once customers that hadnt left, and guassian bayes can help pre-predict customers that might soon leave but have not yet based on having similiar data points. <b><i>2. Can be used to filter out customers that left for uncontrollable reasons which are obivously a factor, and keep the customers that left based on controllable reasons and for reasons that can be predicted by factors in the dataset (categorical customer outliers rather than numerical outliers).</i></b></p>
+    <p> <b style="font-size:16px">KNN</b> - May also be good for the first reason above (Guassian Bayes). It will help classify customers that more closely resemble ones that have left.</p>
+    <p> <b style="font-size:16px">DT</b> - May be useful due to VM plan and Int plan as yes or no, and then from there features that line up are amount of voicemails and amount, time, charges of international plan. *Find out if I need to create a new dataframe with only those variables and other categorical variables, also may need to bin the continuous variables that relate to the categorical. 
+
+</body>
